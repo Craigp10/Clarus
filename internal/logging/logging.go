@@ -10,9 +10,9 @@ import (
 )
 
 type Config struct {
-	Level     string    `env:"LOG_LEVEL" envDefault:"info"`
-	Format    string    `env:"LOG_FORMAT" envDefault:"text"`
-	AddSource bool      `env:"LOG_ADD_SOURCE" envDefault:"false"`
+	Level     string    `env:"LEVEL" envDefault:"info"`
+	Format    string    `env:"FORMAT" envDefault:"text"`
+	AddSource bool      `env:"ADD_SOURCE" envDefault:"false"`
 	Output    io.Writer `env:"-"`
 }
 
